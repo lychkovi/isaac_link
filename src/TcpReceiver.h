@@ -76,10 +76,10 @@ public:
                         msg->uni.cloud.translation[1], 
                         msg->uni.cloud.translation[2]);
                     rotation = tf::Quaternion(
-                        msg->uni.cloud.rotation[0], 
                         msg->uni.cloud.rotation[1], 
                         msg->uni.cloud.rotation[2], 
-                        msg->uni.cloud.rotation[3]);
+                        msg->uni.cloud.rotation[3], 
+                        msg->uni.cloud.rotation[0]);
                     ptr = (float*) (pbuf->data + sizeof(MsgHeader));
                     npts = msg->uni.cloud.npts;
                     pts.clear();

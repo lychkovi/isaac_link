@@ -131,7 +131,7 @@ int main(int argc, char **argv)
     return -1;
   }
 
-  ros::Rate loop_rate(20); // Прием сообщения будет происходит с частотой 10 Гц
+  ros::Rate loop_rate(60); // Прием сообщения будет происходит с частотой 10 Гц
 
   /**
    * A count of how many messages we have sent. This is used to create
